@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Conda environments
+conda-env/
+
+# TensorFlow models
+*.keras
+*.h5
+
+# NetCDF climate data
+*.nc
+
+# Generated outputs
+outputs/
+
+# Plots
+plots/
+
+# Temporary files
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+Miniconda3-latest-Linux-x86_64.sh
