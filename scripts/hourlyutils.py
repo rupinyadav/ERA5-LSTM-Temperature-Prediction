@@ -628,7 +628,32 @@ of model generalization ability.
         "r2": r2
     }
 
+def create_test_comparison_table(results):
+    """
+Create a comparison table summarizing testing-period
+forecast performance for multiple cities.
+"""
+    comparison = pd.DataFrame({
 
+        "City":
+            [r["city"] for r in results],
+
+        "RMSE":
+            [r["rmse"] for r in results],
+
+        "MAE":
+            [r["mae"] for r in results],
+
+        "R²":
+            [r["r2"] for r in results],
+
+        "Correlation":
+            [r["correlation"] for r in results]
+    })
+
+    comparison.index = comparison.index + 1
+
+    return comparison
 
 def create_holdout_comparison_table(results):
     """
