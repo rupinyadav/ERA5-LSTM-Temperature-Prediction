@@ -81,7 +81,7 @@ def load_hourly_city(city_name):
     """
 
     df = pd.read_csv(
-        f"../data/{city_name}_hourly_2000_2010.txt",
+        f"../data/temperature/{city_name}_hourly_2000_2010.txt",
         sep=r"\s+",
         skiprows=1,
         header=None,

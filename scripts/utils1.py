@@ -69,7 +69,7 @@ random.seed(SEED)
 def load_period_file(filename):
 
     df = pd.read_csv(
-        f"../data/{filename}",
+        f"../data/temperature/{filename}",
         sep=r"\s+",
         skiprows=1,
         header=None,

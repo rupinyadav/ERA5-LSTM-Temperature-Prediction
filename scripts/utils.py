@@ -59,7 +59,7 @@ random.seed(SEED)
 def load_city(city_name):
 
     df = pd.read_csv(
-        f"../data/{city_name}.txt",
+        f"../data/temperature{city_name}.txt",
         sep=r"\s+",
         skiprows=1,
         header=None,
